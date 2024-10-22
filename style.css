@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Updated Color Palette with Five-Color Gradient */
+:root {
+    /* Primary Colors */
+    --primary-red: #a52a36; /* Main cool red color for branding */
+    --primary-red-light: #d16d7b; /* Lighter shade for hover effects or accents */
+    --primary-red-dark: #7a1b24; /* Darker shade for headers or footers */
+
+    /* Five-Color Gradient */
+    --gradient-start: #ff3b47; /* Cool bright red for energy */
+    --gradient-middle1: #ff6066; /* Soft red for warmth */
+    --gradient-middle2: #ff8488; /* Light red for continuity */
+    --gradient-middle3: #e6e3e3; /* Pale red for brightness */
+    --gradient-end: #fdf2f2; /* Very light red for positivity and action */
+
+    /* Neutral Colors */
+    --neutral-dark: #333; /* Darker shade for text and backgrounds */
+    --neutral-light: #fcfaee; /* Clean white for light backgrounds */
+    --neutral-gray: #b0b0b0; /* Light gray for dividers, borders, or secondary text */
+
+    /* Accent Colors */
+    --accent-yellow: #ffd700; /* For call-to-action buttons or highlights */
+    --accent-blue: #2a9df4; /* Optional accent for secondary buttons or headings */
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--neutral-dark);
+    /* testing */
+    height: 100vh;
+    background-color: #2a9df4;
+}
+
+/*  */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--neutral-light);
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+.header .logo {
+    font-family: "Playwrite GB S", cursive;
+    font-size: 3.4rem;
+    color: var(--primary-red);
+    cursor: pointer;
+}
+.header .logo:hover {
+    animation: pulse 1.5s;
+    /* animation: fadeInUp 1s forwards ; */
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* @keyframes fadeInUp {
+    0% {
+        opacity: 0; 
+        transform: translateX(-30px); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+} */
+.main-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 3.8rem;
+    list-style: none;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--neutral-dark);
+    transition: all 0.3s ease-in-out;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: var(--primary-red);
+}
+/* mobile nav */
+.btn-mobile-nav {
+    border: none;
+    cursor: pointer;
+    background: none;
+    display: none;
+    z-index: 99999;
+}
+.icon-mobile-nav {
+    font-size: 3.2rem;
+    color: var(--primary-red-dark);
+}
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+/* sticky navigation bar */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--accent-blue);
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+/* test */
+section,
+p {
+    padding: 100rem 0;
+    background-color: #7a1b24;
+}
