@@ -466,7 +466,7 @@ body {
 /* footer */
 .footer {
     padding: 8.6rem 2rem;
-    border-top: 1px solid hsla(0, 0%, 47%, 0.15);
+    /* border-top: 1px solid hsla(0, 0%, 47%, 0.15); */
     background-color: var(--neutral-dark);
     color: var(--neutral-light);
 }
@@ -532,4 +532,89 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
+}
+/* progress bar */
+.section-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.section-services-image img {
+    width: 100%;
+    height: 100%;
+}
+.section-services-content {
+    background-color: var(--neutral-light);
+    padding: 4rem 2rem;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(245, 246, 252, 0.95),
+            var(--neutral-light)
+        ),
+        url("./images/grid.jpg");
+    background-size: cover;
+}
+.section-services-content-heading {
+    font-size: 3rem;
+    max-width: 46rem;
+}
+.section-services-content-info {
+    font-size: 1.4rem;
+    color: var(--neutral-gray);
+    max-width: 46rem;
+    margin: 2rem 0;
+}
+.progress-container {
+    width: 100%;
+    color: var(--neutral-dark);
+}
+
+.progress-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    width: 100%;
+}
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--neutral-dark); /* Background of the progress bar */
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(
+        to right,
+        var(--gradient-start),
+        var(--accent-blue)
+    );
+    border-radius: 5px;
+}
+
+progress::-moz-progress-bar {
+    background: linear-gradient(
+        to right,
+        var(--gradient-start),
+        var(--accent-blue)
+    );
+    border-radius: 5px;
+}
+
+span {
+    width: 10%;
+    text-align: right;
 }

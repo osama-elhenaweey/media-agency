@@ -110,6 +110,31 @@
     .slider__btn {
         display: none;
     }
+    .section-services {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section-services-image {
+        display: none;
+    }
+    .section-services-content {
+        margin-inline: auto;
+        background: none;
+    }
+    .section-services-content-heading,
+    .section-services-content-info {
+        text-align: center;
+    }
+    progress {
+        margin-right: 0;
+    }
+    label {
+        width: 60%;
+    }
+    span {
+        width: 40%;
+        text-align: right;
+    }
 }
 /* 450 */
 @media (max-width: 27.5em) {
