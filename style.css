@@ -314,7 +314,7 @@ body {
 
 /* TESTIMONIALS */
 .testimonial {
-    width: 80%;
+    width: 75%;
     position: relative;
     background-color: var(--neutral-light);
     padding: 2.8rem 3.8rem;

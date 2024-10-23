@@ -20,7 +20,7 @@
 /* 700 */
 @media (max-width: 44em) {
     html {
-        font-size: 38%;
+        font-size: 42%;
         overflow-x: hidden;
     }
     body {
@@ -96,15 +96,19 @@
 
 /* 550 */
 @media (max-width: 34em) {
-    html {
+    /* html {
         font-size: 31%;
+    } */
+    /* testimonial */
+    .testimonial {
+        width: 95%;
+    }
+    .slider__btn {
+        display: none;
     }
 }
 /* 450 */
 @media (max-width: 27.5em) {
-    html {
-        font-size: 25%;
-    }
     .section-hero {
         padding: 10rem 3rem;
         display: grid;
