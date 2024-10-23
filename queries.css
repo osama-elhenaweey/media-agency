@@ -92,6 +92,10 @@
         grid-column: span 2;
         margin-top: 3rem;
     }
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* 550 */
@@ -131,5 +135,9 @@
     }
     .section-hero-image {
         display: none;
+    }
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

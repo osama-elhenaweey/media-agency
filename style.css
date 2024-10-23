@@ -215,6 +215,81 @@ body {
     transform: scale(1.07, 1.05) skewX(-15deg);
     background-image: var(--gradient-primary);
 }
+/* section Portfolio */
+.section-portfolio {
+    padding: 10rem 3rem;
+    background-color: var(--neutral-light);
+    border-top: 1px solid rgba(197, 195, 195, 0.4);
+}
+.section-portfolio-heading {
+    font-size: 5.4rem;
+    text-align: center;
+}
+.section-portfolio-info {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--neutral-gray);
+    margin-top: 3.6rem;
+    max-width: 45rem;
+    margin-inline: auto;
+}
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem 0;
+    gap: 2rem;
+}
+.portfolio-project {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.portfolio-project-image {
+    overflow: hidden;
+}
+.portfolio-project-image img {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.portfolio-project-image img:hover {
+    transform: scale(1.1);
+}
+.portfolio-project-details h3 {
+    font-size: 2.4rem;
+}
+.portfolio-project-details p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 2rem 0;
+    max-width: 80%;
+}
+.portfolio-project-details-container {
+    padding: 2rem;
+    color: var(--neutral-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-arrow {
+    background-color: var(--neutral-light);
+    border: 1px solid var(--neutral-dark);
+    color: var(--neutral-dark);
+    padding: 1.4rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.btn-arrow i {
+    rotate: 0deg;
+    transition: all 0.3s ease-in-out;
+}
+.btn-arrow i:hover {
+    rotate: -90deg;
+}
 /* section testimonal */
 .section-testimonial {
     padding: 10rem 3rem;
