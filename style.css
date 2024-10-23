@@ -55,6 +55,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--neutral-dark);
+
     height: 9.6rem;
     padding: 0 4.8rem;
     box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
@@ -218,6 +219,14 @@ body {
 .section-testimonial {
     padding: 10rem 3rem;
     background-color: var(--primary-red);
+    background-image: linear-gradient(
+            to bottom,
+
+            rgba(14, 14, 15, 0.95),
+            var(--primary-red)
+        ),
+        url("./images/grid.jpg");
+    background-size: cover;
     color: var(--neutral-dark);
 }
 /* slider */
