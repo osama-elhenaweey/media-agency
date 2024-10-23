@@ -314,7 +314,7 @@ body {
 
 /* TESTIMONIALS */
 .testimonial {
-    width: 75%;
+    width: 80%;
     position: relative;
     background-color: var(--neutral-light);
     padding: 2.8rem 3.8rem;
@@ -378,4 +378,74 @@ body {
 .testimonial__rate {
     color: var(--accent-yellow);
     cursor: pointer;
+}
+/* footer */
+.footer {
+    padding: 8.6rem 2rem;
+    border-top: 1px solid hsla(0, 0%, 47%, 0.15);
+    background-color: var(--neutral-dark);
+    color: var(--neutral-light);
+}
+.footer-container {
+    max-width: 110rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    gap: 3.6rem;
+    padding: 5rem 0;
+}
+.logo {
+    font-family: "Playwrite GB S", cursive;
+    font-size: 2.8rem;
+    color: var(--primary-red);
+    cursor: pointer;
+}
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+}
+.social-links {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+}
+.social-link {
+    font-size: 2.2rem;
+    color: var(--neutral-gray);
+}
+.social-link:hover,
+.footer-link:hover {
+    color: var(--gradient-middle2);
+}
+.copyright {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: var(--neutral-gray);
+    margin-top: auto;
+}
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 4.2rem;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--neutral-gray);
+    line-height: 1.4;
+}
+.footer-link {
+    color: var(--neutral-gray);
+    text-decoration: none;
+}
+.footer-list {
+    list-style: none;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
 }
